@@ -5,6 +5,7 @@ public class MarsRover {
 	private int y;
 	private char direction;
 	private boolean foundObstacle = false;
+	private String commands;
 	
 	public boolean getFoundObstacle() {
 		return foundObstacle;
@@ -12,7 +13,7 @@ public class MarsRover {
 	public void setFoundObstacle(boolean obstacle) {
 		this.foundObstacle = obstacle;
 	}
-	private String commands;
+	
 	
 	public String getCommands() {
 		return commands;
@@ -20,11 +21,14 @@ public class MarsRover {
 	public void setCommands(String commands) {
 		this.commands = commands;
 	}
+	
+	
 	public MarsRover(int x, int y, char direction) {
 		this.x = x;
 		this.y = y;
 		this.direction = direction;
 	}
+	
 	public int getX() {
 		return x;
 	}

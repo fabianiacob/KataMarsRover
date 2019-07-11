@@ -34,6 +34,7 @@ public class MarsRoverTest {
 	@Test
 	public void testForward() {
 		MarsRover mr = new MarsRover(2,2,'N');
+		
 		Grid g = new Grid(100, 100);
 		CommandsService cs = new CommandsService(g);
 		
